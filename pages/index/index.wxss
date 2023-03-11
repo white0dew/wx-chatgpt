@@ -1,0 +1,125 @@
+page {
+    background-color: rgb(214, 195, 195);
+  }
+
+.userinfo {
+    -webkit-animation: oneshow .8s ease 1;
+    animation: oneshow .8s ease 1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: top;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+
+.usermsg {
+    margin-left: 20rpx;
+    padding: 17rpx 20rpx;
+    border-radius: 35rpx;
+    margin-right: 20rpx;
+}
+
+.aiinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    -webkit-animation: oneshow .8s ease 1;
+    animation: oneshow .8s ease 1
+}
+
+.chat-img {
+    border-radius: 50%;
+    width: 100rpx;
+    height: 100rpx;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.aimsg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20rpx;
+    padding: 17rpx 20rpx
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+.inpubut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9f9f9;
+    width: 100%;
+    font-size: 80rpx
+}
+
+.dh-input {
+    max-width: 98%;
+    border-radius: 10rpx;
+    padding-left: 20rpx;
+    margin-left: 20rpx;
+    font-size: 40rpx;
+    background-color: #f0f0f0;
+}
+
+.my-neirong-sm {
+    font-size: 40rpx;
+    color: #616161
+}
+
+.btn {
+    height: 90rpx;
+    width: 25%;
+    text-align: center;
+    background-color:#1089c5;
+    color: #f1f3f6;
+    border-radius: 250rpx
+}
+
+.popcls {
+    width: 80vw;
+    height: 40vh;
+    background: #fff;
+    border-radius: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center
+}
+
+.bot-right {
+  margin-right: 10rpx;
+  margin-left: 20rpx;
+  width: 500rpx;
+  text-align: right;
+  display: flex;
+}
+.bot-text {
+  background-color: #F7F7F7;
+  padding: 10rpx 10rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.nick {
+  margin-top: 20rpx;
+}
+.nick-right {
+  margin-top: 20rpx;
+}

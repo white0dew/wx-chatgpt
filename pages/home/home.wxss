@@ -1,0 +1,122 @@
+/* pages/home/home.wxss */
+page {
+  background-color: rgb(214, 195, 195);
+}
+
+.loading_box {
+  width: 100%;
+  position: absolute;
+  margin-top: -4%;
+  text-align: center;
+  padding: 95rpx 0;
+  z-index: 2;
+}
+
+.loading_box>view {
+  display: inline-block;
+}
+
+.log {
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-style: italic;
+  color: rgb(3, 0, 0);
+  background: rgb(214, 195, 195);
+  border-radius: 50rpx;
+  margin-top: 80%;
+  margin-left: 31%;
+}
+
+.btn {
+  width: 500rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #140202;
+  color: #fff;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  margin: 2rpx auto;
+}
+
+
+@keyframes loading3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@-webkit-keyframes loading3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.loading3 {
+  width: 20rpx;
+  height: 20rpx;
+  background: #f6a623;
+  border-radius: 50%;
+  margin-left: 15rpx;
+}
+
+.loading3_1 {
+  -webkit-animation: loading3 1s linear infinite alternate;
+  animation: loading3 1s linear infinite alternate;
+}
+
+.loading3_2 {
+  -webkit-animation: loading3 1s linear infinite alternate;
+  animation: loading3 1s linear infinite alternate;
+  animation-delay: 0.5s;
+}
+
+.loading3_3 {
+  -webkit-animation: loading3 1s linear infinite alternate;
+  animation: loading3 1s linear infinite alternate;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes fading_circle {
+  0% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.1);
+    opacity: 1;
+  }
+}
+
+@keyframes fading_circle {
+  0% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(0.1);
+    opacity: 1;
+  }
+}
+
+.loading_fade_circle {
+  width: 120rpx;
+  height: 120rpx;
+  background: #3e8a7c;
+  border-radius: 50%;
+  -webkit-animation: fading_circle 1s ease-out infinite alternate;
+  animation: fading_circle 1s ease-out infinite alternate;
+}

@@ -1,0 +1,93 @@
+<view>
+	<scroll-view style="width:100%;" scroll-with-animation="{{true}}" scroll-y="true">
+		<view id="okk" scroll-with-animation="{{true}}">
+			<block
+			 wx:for="{{msgList}}"
+			 wx:for-item="x"
+			 wx:for-index="i"
+			 wx:key="i"
+			>
+				<view class="flex-column-start">
+					<block wx:if="{{x.my}}">
+						<view class="userinfo">
+							<view class="chat-img">
+								<image style="height:80rpx;width:80rpx;" src="../../static/normal_human.png" mode="aspectFit" />
+							</view>
+							<view class="flex" style="max-width:500rpx;">
+								<view class="usermsg" style="border-radius:35rpx;background-color:#f9f9f9;">
+									<text style="word-break:break-all;" user-select="true" data-event-opts="{{[['bindtap',[['copyText',['$event']]]]]}}" value="{{x.msg}}" bindtap="__e"  data-key="{{x.msg}}">{{x.msg}}</text>
+								</view>
+							</view>
+						</view>
+					</block>
+					<block wx:if="{{!x.my}}">
+						<view class="aiinfo">
+							<view class="chat-img ">
+								<image style="height:80rpx;width:80rpx;" src="../../static/icon1.jpg" mode="aspectFit" />
+							</view>
+							<view class="flex" style="max-width:500rpx;">
+								<view class="aimsg" style="border-radius:35rpx;background-color:#f9f9f9;">
+									<text style="word-break:break-all;" user-select="true" data-event-opts="{{[['bindtap',[['copyText',['$event']]]]]}}" value="{{x.msg}}" bindtap="__e"  data-key="{{x.msg}}">{{x.msg}}</text>
+								</view>
+							</view>
+						</view>
+					</block>
+				</view>
+			</block>
+			<view style="height:130rpx;" />
+		</view>
+
+	</scroll-view>
+	<view class="flex-column-center">
+		<block wx:if="{{!apisucc}}">
+			<button
+			 data-event-opts="{{[['tap',[['openpop',['$event']]]]]}}"
+			 class="btn"
+			 style="margin-bottom:20rpx;width:auto;height:auto;"
+			 bindtap="__e"
+			>{{apibut}}
+			</button>
+		</block>
+		<block wx:if="{{apisucc}}">
+			<view class="inpubut">
+				<textarea
+				 class="dh-input"
+				 auto-height="true"
+				 show-confirm-bar=""
+         cursor-spacing = "25"
+				 type="text"
+				 style="word-break: break-all;border:0;"
+				 confirm-type="search"
+				 placeholder-class="my-neirong-sm"
+				 placeholder="可以开始描述您的问题啦"
+				 data-event-opts="{{[['confirm',[['sendMsg',['$event']]]],['input',[['__set_model',['','msg','$event',[]]]]]]}}"
+				 value="{{msg}}"
+				 bindconfirm="__e"
+				 bindinput="__e"
+				/>
+				<button class="btn" disabled="{{msgLoad}}"   style="border:0;" data-event-opts="{{[['tap',[['sendMsg',['$event']]]]]}}" bindtap="__e">{{sentext}}</button></view>
+    </block>
+  </view>
+  <uni-popup class="vue-ref" vue-id="8dd740cc-1" type="center" data-ref="popup" bind:__l="__l" vue-slots="{{['default']}}">
+    <view class="popcls">
+      <view class="uni-textarea" style="width:90%;margin:20rpx 20rpx;border:1px solid #000000;"><textarea style="width:100%;" placeholder-style="color:#F76260" placeholder="{{apiadj}}" data-event-opts="{{[['input',[['__set_model',['','api','$event',[]]]]]]}}" value="{{api}}" bindinput="__e">
+
+				
+				
+				</textarea>
+			</view>
+			<view style="display:flex;flex-direction:row;">
+				<button
+				 style="margin:10rpx;"
+				 type="primary"
+				 data-event-opts="{{[['tap',[['apiset',['$event']]]]]}}"
+				 bindtap="__e"
+				>确认
+				</button>
+				<button data-event-opts="{{[['tap',[['clopop',['$event']]]]]}}" style="margin:10rpx;" bindtap="__e">取消</button>
+			</view>
+	</view>
+	</uni-popup>
+
+</view>
+

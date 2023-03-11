@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml-->
+<!--pages/subPack/customIpt/index.wxml-->
+
+<!-- <image class = "log" src= "../../static/ChatAI2.png" mode="center"></image> -->
+<!-- <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <!-- <view class="loading3 loading3_3"></view> -->
+<view>
+<view class="loading_box">
+  <view class="loading_fade_circle" catchtap="showCode"></view>
+</view>
+<view class="log">AI Immersion</view>
+<view class="btn" catchtap="showCode">欢迎来到 AI 世界</view>
+</view>

@@ -1,0 +1,32 @@
+{
+    "description": "项目配置文件。",
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "setting": {
+        "urlCheck": false,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "bigPackageSizeSupport": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "ignoreUploadUnusedFiles": false,
+        "enhance": true
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.30.0",
+    "appid": "wx02bd8c3a4dec8768",
+    "projectname": "chatgpt",
+    "condition": {},
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
+    },
+    "simulatorPluginLibVersion": {}
+}
