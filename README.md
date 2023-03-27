@@ -20,7 +20,7 @@
 
 ![img](https://cdn.nlark.com/yuque/0/2023/jpeg/22382235/1678507577685-2e77b7a2-fa26-403d-9c26-8b10f8f7d735.jpeg)
 
-![img](https://github.com/white0dew/wx-chatgpt/blob/main/demo1.gif)
+![gif](https://github.com/white0dew/wx-chatgpt/blob/main/demo1.gif)
 
 
 # Implementation
