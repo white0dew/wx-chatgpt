@@ -16,13 +16,12 @@
 
 # Experience
 
-可以体验最新版本的AI！
+实际效果可以参考gif。
 
 ![img](https://cdn.nlark.com/yuque/0/2023/jpeg/22382235/1678507577685-2e77b7a2-fa26-403d-9c26-8b10f8f7d735.jpeg)
 
-![img](https://cdn.nlark.com/yuque/0/2023/png/22382235/1679472853586-7fd976b2-57d5-4ffa-a327-1292bb9697d0.png)
+![img](https://github.com/white0dew/wx-chatgpt/blob/main/demo1.gif)
 
-![img](https://cdn.nlark.com/yuque/0/2023/png/22382235/1678507747265-1cd5f1dc-2b2d-48e1-b0be-bff421d72134.png)
 
 # Implementation
 
