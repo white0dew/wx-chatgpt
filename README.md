@@ -1,4 +1,5 @@
 # wx-chatgpt
+基于OpenAI构建的ChatGPT微信小程序，采用流式输入，实现打字机效果，比官网更加迅速，可以快速部署。主要技术栈：js、wxapp、python、uniapp。
 
 # Introduction
 
