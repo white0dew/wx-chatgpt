@@ -48,4 +48,4 @@ thanks openSource：https://github.com/smallnew666/ChatGPT-wxapp
 
 有问题可以加群联系我：
 
-![img](https://cdn.nlark.com/yuque/0/2023/jpeg/22382235/1679472777418-859deb6e-da96-4164-9367-ecf157dc5021.jpeg)
+![img](https://cdn.nlark.com/yuque/0/2023/jpeg/22382235/1682558192330-cb724deb-46af-4f89-b0dc-3bce7cb6aac6.jpeg)
